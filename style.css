@@ -16,12 +16,14 @@ main {
     width: 100vw;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
 }
 
 section {
     flex: 1;
     display: flex;
     justify-content: center;
+    min-height: 100vh;
 }
 
 
@@ -92,6 +94,10 @@ section.image-section h1 {
     border: 1px solid #1e1e1e39;
     border-radius: 5px;
     margin-bottom: .9em;
+}
+
+.form-section input:hover, button, label[for="check-me"] {
+    cursor: pointer;
 }
 
 .form-section input:focus-within {
