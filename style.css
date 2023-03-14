@@ -21,6 +21,7 @@ main {
 
 section {
     flex: 1;
+    min-width: 100px;
     display: flex;
     justify-content: center;
     min-height: 100vh;
@@ -145,6 +146,11 @@ form button {
 
 form button:hover {
     background: var(--accent);
+}
+
+form button:disabled {
+    opacity: 0.3;
+    cursor:not-allowed;
 }
 
 form button.social-sign-in--google {
